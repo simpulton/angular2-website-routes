@@ -1,0 +1,50 @@
+#header {
+    height: 64px;
+    background: #fff;
+    position: fixed;
+    header: 0;
+    left: 0;
+    width: 100%;
+}
+
+#header h1#logo {
+    float: left;
+    margin: 0;
+}
+
+#header h1#logo a {
+    background: url(../images/logo.png) no-repeat top left;
+    width: 194px;
+    height: 48px;
+    margin: 8px;
+    display: block;
+    text-indent: -9999px;
+}
+
+#header .router-link-active {
+    color: #C83434;
+}
+
+#header .color {
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#header #menu {float:left;padding:17px 40px 0 0;}
+
+#container {padding:100px 20px 20px 20px;}
+
+.color {
+    background-color: rgba(195, 30, 30, 0.9) !important;
+}
+
+.shadow {
+    background: url(../images/top-shadow.png) repeat-x;
+    height: 35px;
+    position: fixed;
+    top: 68px;
+    width: 100%;
+}
