@@ -1,12 +1,16 @@
-<h1>{{title}}</h1>
-<p>{{body}}</p>
+<h1>
+  {{ title }}
+</h1>
+<p>
+  {{ body }}
+</p>
 <hr/>
 <experiment *ngFor="#experiment of experiments" [experiment]="experiment"></experiment>
 <hr/>
 <div>
-    <h2 class="text-error">Experiments: {{message}}</h2>
-    <form class="form-inline">
-      <input type="text" [(ngModel)]="message" placeholder="Message">
-      <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>
-    </form>
+  <h2 class="text-error">Experiments: {{message}}</h2>
+  <form class="form-inline">
+    <input type="text" [(ngModel)]="message" placeholder="Message">
+    <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>
+  </form>
 </div>
