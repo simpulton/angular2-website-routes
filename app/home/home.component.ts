@@ -2,24 +2,21 @@ import {Component} from 'angular2/core';
 import {StateService} from '../common/state.service';
 
 @Component({
-    selector: 'home',
-    templateUrl: 'app/home/home.component.html'
+  selector: 'home',
+  templateUrl: 'app/home/home.component.html'
 })
 export class HomeComponent {
-    title: string;
-    body: string;
-    message: string;
+  title: string = 'Home Page';
+  body:  string = 'This is the about home body';
+  message: string;
 
-    constructor(public _StateService: StateService) { }
+  constructor(private _StateService: StateService) { }
 
-    ngOnInit() {
-        this.title = 'Home Page';
-        this.body = 'This is the about home body';
+  ngOnInit() {
+    this.message = this._StateService.getMessage();
+  }
 
-        this.message = this._StateService.getMessage();
-    }
-
-    updateMessage(m: string): void {
-        this._StateService.setMessage(m);
-    }
+  updateMessage(m: string): void {
+    this._StateService.setMessage(m);
+  }
 }

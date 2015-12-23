@@ -10,12 +10,12 @@ import {ExperimentsService} from './common/experiments.service';
   selector: 'app',
   templateUrl: 'app/app.component.html',
   styleUrls: ['app/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ ROUTER_DIRECTIVES ],
   providers: [StateService, ExperimentsService],
 })
 @RouteConfig([
-  {path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true},
-  {path: '/about', name: 'About', component: AboutComponent},
-  {path: '/experiments', name: 'Experiments', component: ExperimentsComponent}
+  {path: '/home',        name: 'Home',        component: HomeComponent, useAsDefault: true },
+  {path: '/about',       name: 'About',       component: AboutComponent },
+  {path: '/experiments', name: 'Experiments', component: ExperimentsComponent }
 ])
 export class AppComponent {}
