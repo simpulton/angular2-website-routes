@@ -18,7 +18,6 @@ export class ExperimentDetailComponent {
   @Input() experiment: Experiment;
 
   doExperiment(): void {
-    var count = this.experiment.completed + 1;
-    this.experiment.completed = count;
+    this.experiment.completed += 1;
   };
 }
