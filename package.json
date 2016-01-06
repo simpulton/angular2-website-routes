@@ -1,6 +1,11 @@
 {
   "name": "angular2-website-routes",
   "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/simpulton/angular2-website-routes.git"
+  },
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -12,9 +17,9 @@
     "systemjs": "^0.19.8",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.13",
-    "reflect-metadata": "^0.1.2",
-    "rxjs": "^5.0.0-beta.0",
-    "zone.js": "^0.5.10"
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
     "concurrently": "^1.0.0",
