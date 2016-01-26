@@ -8,6 +8,7 @@ This is a simple Angular 2 website using the brand new router. It demonstrates h
 
 ```bash
 git clone https://github.com/simpulton/angular2-website-routes.git
+cd angular2-website-routes
 npm i
 npm start
 ```
