@@ -14,7 +14,7 @@ npm i
 npm start
 ```
 
-Then navigate your browser to http://localhost:8080 and use the app.
+Then navigate your browser to [http://localhost:8080](http://localhost:8080) and use the app.
 
 ## Testing
 The test setup includes `webpack.test.config.js`, `spec-bundle.js`, and `karma.conf.js`. To run unit tests, execute `npm test` in your terminal.
