@@ -4,20 +4,13 @@
 <head>
     <base href="/">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="node_modules/angular2/bundles/router.dev.js"></script>
-    <script>
-        System.config({ packages: { app: { format: 'register', defaultExtension: 'js' } } });
-        System.import('app/boot')
-            .then(null, console.error.bind(console));
-    </script>
+    <link rel="icon" href="favicon.ico" title="favicon" charset="utf-8">
 </head>
 
 <body>
     <app>Loading...</app>
+
+    <script src="bundle.js"></script>
 </body>
 
 </html>
