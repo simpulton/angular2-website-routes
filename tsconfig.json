@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "system",
-    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "removeComments": false,
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "sourceMap": true
   },
+  "compileOnSave": false,
+  "buildOnSave": false,
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "filesGlob": [
+    "app/**/*.ts",
+    "typings/browser.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
 }
