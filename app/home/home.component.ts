@@ -10,13 +10,13 @@ export class HomeComponent {
   body:  string = 'This is the about home body';
   message: string;
 
-  constructor(private _StateService: StateService) { }
+  constructor(private _stateService: StateService) { }
 
   ngOnInit() {
-    this.message = this._StateService.getMessage();
+    this.message = this._stateService.getMessage();
   }
 
   updateMessage(m: string): void {
-    this._StateService.setMessage(m);
+    this._stateService.setMessage(m);
   }
 }

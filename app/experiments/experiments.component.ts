@@ -17,15 +17,15 @@ export class ExperimentsComponent {
   experiments: Experiment[];
 
   constructor(
-    private _StateService: StateService,
-    private _ExperimentsService: ExperimentsService) {}
+    private _stateService: StateService,
+    private _experimentsService: ExperimentsService) {}
 
   ngOnInit() {
-    this.experiments = this._ExperimentsService.getExperiments();
-    this.message = this._StateService.getMessage();
+    this.experiments = this._experimentsService.getExperiments();
+    this.message = this._stateService.getMessage();
   }
 
   updateMessage(m: string): void {
-    this._StateService.setMessage(m);
+    this._stateService.setMessage(m);
   }
 }
