@@ -1,10 +1,10 @@
 {
-  "name": "angular2-website-routes",
+  "name": "fem-ng2-simple-app",
   "version": "0.0.1",
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simpulton/angular2-website-routes.git"
+    "url": "https://github.com/onehungrymind/fem-ng2-simple-app/"
   },
   "scripts": {
     "start": "webpack-dev-server --inline --watch",
