@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {NgFor} from 'angular2/common';
 import {Experiment} from '../common/experiment.model';
 import {ExperimentsService} from '../common/experiments.service';
@@ -10,7 +10,7 @@ import {ExperimentDetailComponent} from './experiment-details/experiment.detail.
   templateUrl: 'app/experiments/experiments.component.html',
   directives: [ExperimentDetailComponent]
 })
-export class ExperimentsComponent {
+export class ExperimentsComponent implements OnInit {
   title: string = 'Experiments Page';
   body: string = 'This is the about experiments body';
   message: string;
