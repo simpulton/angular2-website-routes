@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {NgFor} from 'angular2/common';
 import {Experiment} from '../common/experiment.model';
 import {ExperimentsService} from '../common/experiments.service';
@@ -10,22 +10,22 @@ import {ExperimentDetailComponent} from './experiment-details/experiment.detail.
   templateUrl: 'app/experiments/experiments.component.html',
   directives: [ExperimentDetailComponent]
 })
-export class ExperimentsComponent {
+export class ExperimentsComponent implements OnInit {
   title: string = 'Experiments Page';
   body: string = 'This is the about experiments body';
   message: string;
   experiments: Experiment[];
 
   constructor(
-    private _StateService: StateService,
-    private _ExperimentsService: ExperimentsService) {}
+    private _stateService: StateService,
+    private _experimentsService: ExperimentsService) {}
 
   ngOnInit() {
-    this.experiments = this._ExperimentsService.getExperiments();
-    this.message = this._StateService.getMessage();
+    this.experiments = this._experimentsService.getExperiments();
+    this.message = this._stateService.getMessage();
   }
 
   updateMessage(m: string): void {
-    this._StateService.setMessage(m);
+    this._stateService.setMessage(m);
   }
 }
