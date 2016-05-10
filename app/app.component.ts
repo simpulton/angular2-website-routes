@@ -14,6 +14,7 @@ import {ExperimentsService} from './common/experiments.service';
   providers: [StateService, ExperimentsService],
 })
 @Routes([
+  {path: '/',            component: HomeComponent },
   {path: '/home',        component: HomeComponent },
   {path: '/about',       component: AboutComponent },
   {path: '/experiments', component: ExperimentsComponent }
