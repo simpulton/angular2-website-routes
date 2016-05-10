@@ -1,8 +1,8 @@
 import 'core-js';
 import 'zone.js/dist/zone';
 
-import {bootstrap} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS} from 'angular2/router';
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {ROUTER_PROVIDERS} from '@angular/router';
 import {AppComponent} from './app.component';
 
 bootstrap(AppComponent, [

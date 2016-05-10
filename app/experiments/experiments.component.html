@@ -5,7 +5,7 @@
   {{ body }}
 </p>
 <hr/>
-<experiment *ngFor="#experiment of experiments" [experiment]="experiment"></experiment>
+<experiment *ngFor="let experiment of experiments" [experiment]="experiment"></experiment>
 <hr/>
 <div>
   <h2 class="text-error">Experiments: {{message}}</h2>

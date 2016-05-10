@@ -1,5 +1,5 @@
-import {Component, OnInit} from 'angular2/core';
-import {NgFor} from 'angular2/common';
+import {Component, OnInit} from '@angular/core';
+import {NgFor} from '@angular/common';
 import {Experiment} from '../common/experiment.model';
 import {ExperimentsService} from '../common/experiments.service';
 import {StateService} from '../common/state.service';
@@ -7,7 +7,7 @@ import {ExperimentDetailComponent} from './experiment-details/experiment.detail.
 
 @Component({
   selector: 'experiments',
-  templateUrl: 'app/experiments/experiments.component.html',
+  template: require('./experiments.component.html'),
   directives: [ExperimentDetailComponent]
 })
 export class ExperimentsComponent implements OnInit {

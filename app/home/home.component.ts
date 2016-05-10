@@ -1,9 +1,9 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {StateService} from '../common/state.service';
 
 @Component({
   selector: 'home',
-  templateUrl: 'app/home/home.component.html'
+  template: require('./home.component.html')
 })
 export class HomeComponent implements OnInit {
   title: string = 'Home Page';

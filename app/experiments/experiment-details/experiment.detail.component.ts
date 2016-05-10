@@ -1,9 +1,9 @@
-import {Component, Input} from 'angular2/core';
+import {Component, Input} from '@angular/core';
 import {Experiment} from '../../common/experiment.model';
 
 @Component({
   selector: 'experiment',
-  templateUrl: 'app/experiments/experiment-details/experiment.detail.component.html',
+  template: require('./experiment.detail.component.html'),
   styles: [`
     .experiment {
       cursor: pointer;

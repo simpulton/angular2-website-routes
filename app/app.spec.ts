@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'angular2/testing';
+import { describe, it, expect } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 

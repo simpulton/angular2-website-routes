@@ -3,13 +3,13 @@ import {
   describe,
   expect,
   it
-} from 'angular2/testing';
+} from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 
 describe('Home Component', () => {
   it('should be named `HomeComponent`', () => {
-    expect(HomeComponent.name).toBe('HomeComponent');
+    expect(HomeComponent['name']).toBe('HomeComponent');
   });
 
   it('should have a method called `updateMessage`', () => {
