@@ -17,6 +17,7 @@ import {ExperimentsService} from './common/experiments.service';
   {path: '/',            component: HomeComponent },
   {path: '/home',        component: HomeComponent },
   {path: '/about',       component: AboutComponent },
-  {path: '/experiments', component: ExperimentsComponent }
+  {path: '/experiments', component: ExperimentsComponent },
+  {path: '/*',           component: HomeComponent }
 ])
 export class AppComponent {}
