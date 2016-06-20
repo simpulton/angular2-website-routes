@@ -4,6 +4,7 @@ This is a simple Angular 2 website using the brand new router. It demonstrates h
 ## Dependencies
 - You must have `node` and `npm` installed (via `brew install node` or [NodeJS.org](https://nodejs.org/en/));
 - You must also have `typings` installed globally via `npm i -g typings`
+- Be sure that you have `typings` version `1.x`
 
 ## Getting Started
 

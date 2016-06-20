@@ -1,7 +1,5 @@
 {
-  "dependencies": {},
-  "devDependencies": {},
-  "ambientDependencies": {
+  "globalDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#6697d6f7dadbf5773cb40ecda35a76027e0783b2",
     "hammerjs": "github:DefinitelyTyped/DefinitelyTyped/hammerjs/hammerjs.d.ts#74a4dfc1bc2dfadec47b8aae953b28546cb9c6b7",
     "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#4b36b94d5910aa8a4d20bdcd5bd1f9ae6ad18d3c",
