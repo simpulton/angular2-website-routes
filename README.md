@@ -1,4 +1,4 @@
-# Building an Angular 2 Website Using Routes
+# Angular 2 website using routers - Build
 This is a simple Angular 2 website using the brand new router. It demonstrates how to build components, configure routes, inject services, and use the `@Input` decorator to bind properties to components.
 
 ## Dependencies
