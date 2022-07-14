@@ -7,7 +7,9 @@ export class ExperimentsService {
     {name: 'Experiment 1', description: 'This is an experiment', completed:0},
     {name: 'Experiment 2', description: 'This is an experiment', completed:0},
     {name: 'Experiment 3', description: 'This is an experiment', completed:0},
-    {name: 'Experiment 4', description: 'This is an experiment', completed:0}
+    {name: 'Experiment 4', description: 'This is an experiment', completed:0},
+    {name: 'Experiment 5', description: 'This is an experiment', completed:0},
+    {name: 'Experiment 6', description: 'This is an experiment', completed:0}
   ];
 
   getExperiments(): Experiment[] {
